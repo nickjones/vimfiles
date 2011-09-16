@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/home/njones/eclipse/ticket9xapian/vendor/plugins/acts_as_xapian/lib/acts_as_xapian'
+let g:netrw_dirhist_2='/home/njones/eclipse/ticket38/config'
+let g:netrw_dirhist_3='/home/njones/eclipse/sv_work3/app/controllers/report'
+let g:netrw_dirhist_4='/etc/modprobe.d'
+let g:netrw_dirhist_5='/home/njones/Projects/android-x86/gingerbread/.repo/repo'
+let g:netrw_dirhist_6='/home/njones/temp/trunk/vendor/plugins/acts_as_xapian/lib/acts_as_xapian'
+let g:netrw_dirhist_7='/home/njones/eclipse/sv_work3/config/environments'
