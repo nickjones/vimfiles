@@ -17,6 +17,13 @@ Symbolically link the git repository copies:
 
     ln -s /path/to/nickjones-vimfiles/.vimrc ~/.vimrc
     ln -s /path/to/nickjones-vimfiles/.vim ~/.vim
+    
+Updating
+--------
+
+Since I directly linked to other GitHub repos, pulling updates requires a slight tweak:
+
+    git pull --recurse-submodules
 
 Contributing
 ------------
