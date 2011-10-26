@@ -1,16 +1,18 @@
-set nocompatible
+set nocompatible		" Vim mode, not Vi
 syntax on
-filetype on
-filetype indent on
-call pathogen#infect()
 filetype plugin indent on
-"color murphy
+call pathogen#infect()		" Load up Tim Pope's stuff
 color vividchalk
-autocmd FileType rb setlocal expandtab shiftwidth=2 softtabstop=2
-autocmd FileType erb setlocal expandtab shiftwidth=2 softtabstop=2
-autocmd FileType html setlocal expandtab shiftwidth=2 softtabstop=2
-autocmd FileType js setlocal expandtab shiftwidth=2 softtabstop=2
-autocmd FileType css setlocal expandtab shiftwidth=2 softtabstop=2
-set autoindent
+augroup myfiletypes
+	autocmd!
+	autocmd FileType ruby,eruby,yaml,html,js,css setlocal autoindent expandtab shiftwidth=2 softtabstop=2
+augroup END
 set nu
-"set foldmethod=syntax
+set history=1000		" Default is only 20
+set spell			" Enable spell checking
+set virtualedit=onemore		" Allow for one character beyond last.
+set cursorline			" Highlight the current line
+hi cursorline guibg=#333333
+hi CursorColumn guibg=#333333
+set wildmenu			" Show list instead of just completing
+set wildmode=list:longest,full	" command <Tab> completion
