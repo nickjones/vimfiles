@@ -24,7 +24,7 @@ Option 2:
 
 Merge my settings with your own by adding this to your existing .vimrc file:
 
-    set runtimepath=^$HOME/path/to/nickjones-vimfiles/.vim
+    set runtimepath^=$HOME/path/to/nickjones-vimfiles/.vim
     runtime vimrc
 
 After those lines, any changes in your .vimrc file will override settings from this repository.
