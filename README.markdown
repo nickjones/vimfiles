@@ -8,23 +8,9 @@ Clone with repository (with submodules) to a local tree:
 
     git clone --recursive https://github.com/nickjones/vimfiles.git nickjones-vimfiles
 
-Option 1:
-
-If you have an existing .vimrc file and .vim folder, move them out of the way:
-
-    mv ~/.vimrc ~/.vimrc.orig
-    mv ~/.vim ~/.vim.orig
-
-Symbolically link the git repository copies:
-
-    ln -s /path/to/nickjones-vimfiles/.vimrc ~/.vimrc
-    ln -s /path/to/nickjones-vimfiles/.vim ~/.vim
-    
-Option 2:
-
 Merge my settings with your own by adding this to your existing .vimrc file:
 
-    set runtimepath^=$HOME/path/to/nickjones-vimfiles/.vim
+    set runtimepath^=$HOME/path/to/nickjones-vimfiles
     runtime vimrc
 
 After those lines, any changes in your .vimrc file will override settings from this repository.
