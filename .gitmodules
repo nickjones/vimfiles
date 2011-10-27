@@ -16,6 +16,6 @@
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
-[submodule "bundle/vcscommand"]
-	path = bundle/vcscommand
-	url = http://repo.or.cz/r/vcscommand.git
+[submodule "bundle/git-vim"]
+	path = bundle/git-vim
+	url = http://github.com/motemen/git-vim.git
