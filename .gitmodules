@@ -19,3 +19,6 @@
 [submodule "bundle/git-vim"]
 	path = bundle/git-vim
 	url = http://github.com/motemen/git-vim.git
+[submodule "bundle/systemverilog.vim"]
+	path = bundle/systemverilog.vim
+	url = https://github.com/vim-scripts/systemverilog.vim

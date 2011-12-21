@@ -21,3 +21,8 @@ else
 endif
 set wildmenu				" Show list instead of just completing
 set wildmode=list:longest,full		" command <Tab> completion
+
+" Patch systemverilog.vim to match filenames
+augroup filetypedetect
+  au BufNewFile,BufRead *.sv setf systemverilog
+augroup END
