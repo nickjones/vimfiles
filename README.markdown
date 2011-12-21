@@ -18,9 +18,18 @@ After those lines, any changes in your .vimrc file will override settings from t
 Updating
 --------
 
-Since I directly linked to other GitHub repos, pulling updates requires a slight tweak:
+Since I directly linked to other GitHub repos through submodules, pulling updates requires a slight tweak:
 
     git pull --recurse-submodules
+
+Optionally, set git to always recurse submodules on a fetch/pull by setting an option
+
+    git config fetch.recurseSubmodules=true
+    
+and then always using a standard pull or fetch
+
+    git pull
+    
 
 Contributing
 ------------
