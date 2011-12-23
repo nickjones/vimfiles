@@ -41,6 +41,6 @@ endfunction
 
 " Mappings
 " run one rspec example or describe block based on cursor position
-map !s :call RunSpec("-l " . <C-r>=line('.')<CR>)
+map !s :call RunSpec("-l " . <C-r>=line('.')<CR>)<CR>
 " run full rspec file
-map !S :call RunSpec("")
+map !S :call RunSpec("")<CR>
