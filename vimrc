@@ -52,3 +52,12 @@ au Syntax svh runtime! syntax/verilog.vim
 au Syntax vpp runtime! syntax/verilog.vim
 au Syntax svpp runtime! syntax/verilog.vim
 au Syntax svhpp runtime! syntax/verilog.vim
+
+" Presentation colors and config
+" (http://vim.devth.com/?tag=colorscheme)
+function! PresentationMode()
+	colorscheme solarized
+	set bg=light
+	set nolist
+endfunction
+nmap <leader>PR :call PresentationMode()<cr>
