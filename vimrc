@@ -44,3 +44,11 @@ endfunction
 map !s :call RunSpec("-l " . <C-r>=line('.')<CR>)<CR>
 " run full rspec file
 map !S :call RunSpec("")<CR>
+
+" System Verilog syntax matching
+so $VIMRUNTIME/syntax/verilog.vim
+au Syntax sv runtime! syntax/verilog.vim
+au Syntax svh runtime! syntax/verilog.vim
+au Syntax vpp runtime! syntax/verilog.vim
+au Syntax svpp runtime! syntax/verilog.vim
+au Syntax svhpp runtime! syntax/verilog.vim
