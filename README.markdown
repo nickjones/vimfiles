@@ -30,6 +30,9 @@ and then always using a standard pull or fetch
 
     git pull
     
+If git throws an error about an unknown option of 'recurse-submodules', manually update submodules with
+
+    git submodule update
 
 Contributing
 ------------
