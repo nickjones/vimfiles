@@ -15,6 +15,17 @@ Merge my settings with your own by adding this to your existing .vimrc file:
 
 After those lines, any changes in your .vimrc file will override settings from this repository.
 
+Personal Customizations
+-----------------------
+
+### Overriding the Color Scheme ###
+
+There's an issue with loading a color scheme with an Ubuntu terminal (vim mode) that the
+background isn't entirely what the color scheme dictates.  As a result, the vividchalk colorscheme
+is loaded again after Vim has finished loading.  Use the following line in your personal `.vimrc`:
+
+    au VimEnter * colorscheme my_color_scheme
+
 Updating
 --------
 
