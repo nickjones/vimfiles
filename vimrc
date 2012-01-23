@@ -5,7 +5,7 @@ call pathogen#infect()			" Load up Tim Pope's stuff
 colorscheme vividchalk
 augroup myfiletypes
 	autocmd!
-	autocmd FileType ruby,eruby,yaml,html,js,css setlocal autoindent expandtab shiftwidth=2 softtabstop=2
+	autocmd FileType ruby,eruby,yaml,html,js,css,cpp setlocal autoindent expandtab shiftwidth=2 softtabstop=2
 augroup END
 set nu
 set history=1000			" Default is only 20
