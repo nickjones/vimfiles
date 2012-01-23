@@ -2,7 +2,7 @@ set nocompatible			" Vim mode, not Vi
 syntax on
 filetype plugin indent on
 call pathogen#infect()			" Load up Tim Pope's stuff
-color vividchalk
+colorscheme vividchalk
 augroup myfiletypes
 	autocmd!
 	autocmd FileType ruby,eruby,yaml,html,js,css setlocal autoindent expandtab shiftwidth=2 softtabstop=2
@@ -15,8 +15,8 @@ if has("gui_running")
 	hi cursorline guibg=#333333
 	hi CursorColumn guibg=#333333
 else
-	" Fix up the colors for bad spelling in Vim mode with Rxvt colors and
-	" vividchalk.
+	" Fix up the colors for bad spelling in Vim mode with Rxvt colors
+	" and vividchalk.
 	hi SpellBad ctermbg=black cterm=bold,underline
 endif
 set wildmenu				" Show list instead of just completing
@@ -61,3 +61,7 @@ function! PresentationMode()
 	set nolist
 endfunction
 nmap <leader>PR :call PresentationMode()<cr>
+
+" Fix for Ubuntu terminal windows with gray backgrounds even though
+" vividchalk explicitly sets a black one.
+au VimEnter * colorscheme vividchalk
