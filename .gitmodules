@@ -28,3 +28,6 @@
 [submodule "bundle/google.vim"]
 	path = bundle/google.vim
 	url = https://github.com/vim-scripts/google.vim
+[submodule "bundle/vim-jde"]
+	path = bundle/vim-jde
+	url = https://github.com/vim-scripts/Vim-JDE
