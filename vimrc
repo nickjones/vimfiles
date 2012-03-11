@@ -9,7 +9,7 @@ augroup myfiletypes
 augroup END
 set nu
 set history=1000			" Default is only 20
-set spell				" Enable spell checking
+"set spell				" Enable spell checking
 set ruler				" This isn't default on RHEL?
 set backspace=indent,eol,start          " more powerful backspacing
 if has("gui_running")
