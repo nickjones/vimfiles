@@ -1,0 +1,10 @@
+" Add Syntastic error messages to the status bar
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+" Enables active mode (always checking)
+let g:syntastic_check_on_open=1
+" Only show syntax errors not warnings (gives false positives)
+let g:syntastic_quiet_warnings=1
+" Add anything in our local working tree to the search path
+set path+=,./**

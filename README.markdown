@@ -26,6 +26,12 @@ is loaded again after Vim has finished loading.  Use the following line in your 
 
     au VimEnter * colorscheme my_color_scheme
 
+### Enabling Syntastic ###
+
+Syntastic isn't automatically part of loading my default vimrc.  If you want it, add the following line.  This will enable automatic syntax checking for a variety of languages.  I also extend the search path to include any nested file to avoid common false fatal errors finding include files with C++.
+
+    runtime vimrc.syntastic
+
 Updating
 --------
 
