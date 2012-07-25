@@ -51,6 +51,12 @@ map !s :call RunSpec("-l " . <C-r>=line('.')<CR>)<CR>
 " run full rspec file
 map !S :call RunSpec("")<CR>
 
+" Map F8 to Tagbar
+nmap <F8> :TagbarToggle<CR>
+" Quickly pressing j followed by k while in insert mode escapes out of insert
+" mode.
+inoremap jk <Esc>
+
 " System Verilog syntax matching
 so $VIMRUNTIME/syntax/verilog.vim
 au Syntax sv runtime! syntax/verilog.vim
