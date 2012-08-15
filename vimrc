@@ -2,7 +2,9 @@ set nocompatible			" Vim mode, not Vi
 syntax on
 filetype plugin indent on
 call pathogen#infect()			" Load up Tim Pope's stuff
-colorscheme vividchalk
+
+colorscheme koehler
+
 augroup myfiletypes
 	autocmd!
 	autocmd FileType ruby,eruby,yaml,html,js,css,cpp setlocal autoindent expandtab shiftwidth=2 softtabstop=2
@@ -68,7 +70,7 @@ au Syntax svhpp runtime! syntax/verilog.vim
 " Presentation colors and config
 " (http://vim.devth.com/?tag=colorscheme)
 function! PresentationMode()
-	colorscheme solarized
+	colorscheme github
 	set bg=light
 	set nolist
 endfunction
@@ -76,4 +78,4 @@ nmap <leader>PR :call PresentationMode()<cr>
 
 " Fix for Ubuntu terminal windows with gray backgrounds even though
 " vividchalk explicitly sets a black one.
-au VimEnter * colorscheme vividchalk
+"au VimEnter * colorscheme vividchalk
