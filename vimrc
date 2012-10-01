@@ -60,12 +60,10 @@ nmap <F8> :TagbarToggle<CR>
 inoremap jk <Esc>
 
 " System Verilog syntax matching
-so $VIMRUNTIME/syntax/verilog.vim
-au Syntax sv runtime! syntax/verilog.vim
-au Syntax svh runtime! syntax/verilog.vim
-au Syntax vpp runtime! syntax/verilog.vim
-au Syntax svpp runtime! syntax/verilog.vim
-au Syntax svhpp runtime! syntax/verilog.vim
+autocmd BufRead,BufNewFile *.v,*.vh setfiletype verilog
+autocmd BufRead,BufNewFile *.v,*.vh set expandtab tabstop=4 softtabstop=2 shiftwidth=2
+autocmd BufRead,BufNewFile *.sv,*.svi set filetype=verilog_systemverilog
+autocmd BufRead,BufNewFile *.sv,*.svi set expandtab tabstop=4 softtabstop=2 shiftwidth=2
 
 " Presentation colors and config
 " (http://vim.devth.com/?tag=colorscheme)
