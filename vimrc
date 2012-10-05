@@ -30,9 +30,12 @@ endif
 set wildmenu				" Show list instead of just completing
 set wildmode=list:longest,full		" command <Tab> completion
 
-" Patch systemverilog.vim to match filenames
+" Add various extensions for Verilog and SystemVerilog
 augroup filetypedetect
-	au BufNewFile,BufRead *.sv setf systemverilog
+    au BufRead,BufNewFile *.v,*.vh,*.tpl setfiletype verilog
+    au BufRead,BufNewFile *.v,*.vh,*.tpl set expandtab tabstop=4 softtabstop=2 shiftwidth=2
+    au BufRead,BufNewFile *.sv,*.svi,*.svh set filetype=verilog_systemverilog
+    au BufRead,BufNewFile *.sv,*.svi,*.svh set expandtab tabstop=4 softtabstop=2 shiftwidth=2
 augroup END
 
 " Execute open rspec buffer
@@ -58,12 +61,6 @@ nmap <F8> :TagbarToggle<CR>
 " Quickly pressing j followed by k while in insert mode escapes out of insert
 " mode.
 inoremap jk <Esc>
-
-" System Verilog syntax matching
-autocmd BufRead,BufNewFile *.v,*.vh setfiletype verilog
-autocmd BufRead,BufNewFile *.v,*.vh set expandtab tabstop=4 softtabstop=2 shiftwidth=2
-autocmd BufRead,BufNewFile *.sv,*.svi set filetype=verilog_systemverilog
-autocmd BufRead,BufNewFile *.sv,*.svi set expandtab tabstop=4 softtabstop=2 shiftwidth=2
 
 " Presentation colors and config
 " (http://vim.devth.com/?tag=colorscheme)
