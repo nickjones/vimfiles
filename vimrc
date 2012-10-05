@@ -1,3 +1,4 @@
+set encoding=utf-8
 set nocompatible			" Vim mode, not Vi
 syntax on
 filetype plugin indent on
@@ -14,6 +15,7 @@ set history=1000			" Default is only 20
 "set spell				" Enable spell checking
 set ruler				" This isn't default on RHEL?
 set backspace=indent,eol,start          " more powerful backspacing
+set laststatus=2			" Needed for powerline to show in all windows
 if has("gui_running")
 	set cursorline			" Highlight the current line
 	hi cursorline guibg=#333333
