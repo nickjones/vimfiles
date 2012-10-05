@@ -22,7 +22,7 @@ if has("gui_running")
 	" Force the GUI a bit wider to accommodate the ruler
 	" 80 columns + 5 for up to a 9,999 line file.
 	set co=85
-    set mouse=a
+	set mouse=a
 else
 	" Fix up the colors for bad spelling in Vim mode with Rxvt colors
 	" and vividchalk.
