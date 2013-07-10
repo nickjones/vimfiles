@@ -1,8 +1,8 @@
 set encoding=utf-8
 set nocompatible			" Vim mode, not Vi
+call pathogen#infect()			" Load up Tim Pope's stuff
 syntax on
 filetype plugin indent on
-call pathogen#infect()			" Load up Tim Pope's stuff
 
 colorscheme koehler
 
@@ -32,14 +32,6 @@ else
 endif
 set wildmenu				" Show list instead of just completing
 set wildmode=list:longest,full		" command <Tab> completion
-
-" Add various extensions for Verilog and SystemVerilog
-augroup filetypedetect
-    au BufRead,BufNewFile *.v,*.vh,*.tpl setfiletype verilog
-    au BufRead,BufNewFile *.v,*.vh,*.tpl set expandtab tabstop=4 softtabstop=2 shiftwidth=2
-    au BufRead,BufNewFile *.sv,*.svi,*.svh set filetype=verilog_systemverilog
-    au BufRead,BufNewFile *.sv,*.svi,*.svh set expandtab tabstop=4 softtabstop=2 shiftwidth=2
-augroup END
 
 " Execute open rspec buffer
 " Thanks to Ian Smith-Heisters
