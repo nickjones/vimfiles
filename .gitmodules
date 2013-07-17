@@ -37,9 +37,6 @@
 [submodule "bundle/dwm.vim"]
 	path = bundle/dwm.vim
 	url = https://github.com/spolu/dwm.vim
-[submodule "bundle/verilog_systemverilog"]
-	path = bundle/verilog_systemverilog
-	url = http://github.com/vim-scripts/verilog_systemverilog.vim
 [submodule "bundle/vim-powerline"]
 	path = bundle/vim-powerline
 	url = https://github.com/Lokaltog/vim-powerline
