@@ -4,7 +4,7 @@ call pathogen#infect()			" Load up Tim Pope's stuff
 syntax on
 filetype plugin indent on
 
-colorscheme koehler
+colorscheme grb256
 
 augroup myfiletypes
 	autocmd!
@@ -16,19 +16,17 @@ set history=1000			" Default is only 20
 set ruler				" This isn't default on RHEL?
 set backspace=indent,eol,start          " more powerful backspacing
 set laststatus=2			" Needed for powerline to show in all windows
+set nowrapscan
+set cursorline				" Highlight the current line
+hi cursorline guibg=#333333
+hi CursorColumn guibg=#333333
+hi SpellBad ctermbg=black cterm=bold,underline
+hi Visual ctermbg=white
 if has("gui_running")
-	set cursorline			" Highlight the current line
-	hi cursorline guibg=#333333
-	hi CursorColumn guibg=#333333
-
 	" Force the GUI a bit wider to accommodate the ruler
 	" 80 columns + 5 for up to a 9,999 line file.
 	set co=85
 	set mouse=a
-else
-	" Fix up the colors for bad spelling in Vim mode with Rxvt colors
-	" and vividchalk.
-	hi SpellBad ctermbg=black cterm=bold,underline
 endif
 set wildmenu				" Show list instead of just completing
 set wildmode=list:longest,full		" command <Tab> completion
@@ -56,6 +54,7 @@ nmap <F8> :TagbarToggle<CR>
 " Quickly pressing j followed by k while in insert mode escapes out of insert
 " mode.
 inoremap jk <Esc>
+let mapleader=","
 
 " Presentation colors and config
 " (http://vim.devth.com/?tag=colorscheme)
