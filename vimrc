@@ -18,6 +18,7 @@ set backspace=indent,eol,start          " more powerful backspacing
 set laststatus=2			" Needed for powerline to show in all windows
 set nowrapscan
 set cursorline				" Highlight the current line
+set nrformats=alpha,hex
 hi cursorline guibg=#333333
 hi CursorColumn guibg=#333333
 hi SpellBad ctermbg=black cterm=bold,underline
