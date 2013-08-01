@@ -1,6 +1,7 @@
 set encoding=utf-8
 set nocompatible			" Vim mode, not Vi
 call pathogen#infect()			" Load up Tim Pope's stuff
+runtime bundle/vim-snipmate/after/plugin/snipMate.vim " Fix for snipMate & pathogen
 syntax on
 filetype plugin indent on
 
@@ -69,5 +70,3 @@ nmap <leader>PR :call PresentationMode()<cr>
 " Fix for Ubuntu terminal windows with gray backgrounds even though
 " vividchalk explicitly sets a black one.
 "au VimEnter * colorscheme vividchalk
-
-source ./bundle/vim-snipmate/after/plugin/snipMate.vim
