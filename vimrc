@@ -69,3 +69,5 @@ nmap <leader>PR :call PresentationMode()<cr>
 " Fix for Ubuntu terminal windows with gray backgrounds even though
 " vividchalk explicitly sets a black one.
 "au VimEnter * colorscheme vividchalk
+
+source ./bundle/vim-snipmate/after/plugin/snipMate.vim
