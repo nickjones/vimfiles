@@ -58,6 +58,9 @@ nmap <F8> :TagbarToggle<CR>
 inoremap jk <Esc>
 let mapleader=","
 
+" Visual select, then <Enter> to start EasyAlign mode
+vnoremap <silent> <Enter> :EasyAlign<cr>
+
 " Presentation colors and config
 " (http://vim.devth.com/?tag=colorscheme)
 function! PresentationMode()
