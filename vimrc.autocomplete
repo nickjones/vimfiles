@@ -2,6 +2,7 @@
 let g:neocomplcache_enable_at_startup = 1
 let g:neocomplcache_enable_smart_case = 1
 let g:neocomplcache_enable_underbar_completion = 1
+let g:neocomplcache_min_syntax_length = 4
 " Bindings for quick enabling/disabling
 nmap <leader>cc	:NeoComplCacheToggle<cr>
 " <CR>: close popup and save indent.
@@ -11,8 +12,8 @@ function! s:my_cr_function()
 	" For no inserting <CR> key.
 	"return pumvisible() ? neocomplcache#close_popup() : "\<CR>"
 endfunction
-" <TAB>: completion.
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+" <TAB><TAB>: completion.
+"inoremap <expr><TAB><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 " <C-h>, <BS>: close popup and delete backword char.
 inoremap <expr><C-h> neocomplcache#smart_close_popup()."\<C-h>"
 inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
