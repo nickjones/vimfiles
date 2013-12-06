@@ -70,6 +70,8 @@ function! PresentationMode()
 endfunction
 nmap <leader>PR :call PresentationMode()<cr>
 
+highlight ShowTrailingWhitespace ctermbg=red guibg=red
+
 " Fix for Ubuntu terminal windows with gray backgrounds even though
 " vividchalk explicitly sets a black one.
 "au VimEnter * colorscheme vividchalk
