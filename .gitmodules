@@ -97,3 +97,6 @@
 [submodule "bundle/ShowTrailingWhitespace"]
 	path = bundle/ShowTrailingWhitespace
 	url = https://github.com/vim-scripts/ShowTrailingWhitespace
+[submodule "bundle/foldsearch"]
+	path = bundle/foldsearch
+	url = https://github.com/vim-scripts/foldsearch
