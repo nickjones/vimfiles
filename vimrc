@@ -59,8 +59,8 @@ inoremap jk <Esc>
 let mapleader=","
 
 " Visual select, then <Enter> to start EasyAlign mode
-vmap <Enter> <Plug>(EasyAlign)
-nmap <Leader>a <Plug>(EasyAlign)
+vmap <Enter> :EasyAlign<CR>
+nmap <Leader>a :EasyAlign<CR>
 
 " Presentation colors and config
 " (http://vim.devth.com/?tag=colorscheme)
