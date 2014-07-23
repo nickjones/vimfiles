@@ -37,9 +37,6 @@
 [submodule "bundle/dwm.vim"]
 	path = bundle/dwm.vim
 	url = https://github.com/spolu/dwm.vim
-[submodule "bundle/vim-powerline"]
-	path = bundle/vim-powerline
-	url = https://github.com/Lokaltog/vim-powerline
 [submodule "bundle/vim-clojure-static"]
 	path = bundle/vim-clojure-static
 	url = https://github.com/guns/vim-clojure-static
@@ -106,3 +103,6 @@
 [submodule "bundle/gocode"]
 	path = bundle/gocode
 	url = https://github.com/Blackrush/vim-gocode.git
+[submodule "bundle/vim-airline"]
+	path = bundle/vim-airline
+	url = https://github.com/bling/vim-airline
