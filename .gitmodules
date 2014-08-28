@@ -97,15 +97,12 @@
 [submodule "bundle/foldsearch"]
 	path = bundle/foldsearch
 	url = https://github.com/vim-scripts/foldsearch
-[submodule "bundle/vim-golang"]
-	path = bundle/vim-golang
-	url = https://github.com/jnwhiteh/vim-golang
-[submodule "bundle/gocode"]
-	path = bundle/gocode
-	url = https://github.com/Blackrush/vim-gocode.git
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
 	url = https://github.com/bling/vim-airline
 [submodule "bundle/vim-bookmarks"]
 	path = bundle/vim-bookmarks
 	url = https://github.com/MattesGroeger/vim-bookmarks
+[submodule "bundle/vim-go"]
+	path = bundle/vim-go
+	url = https://github.com/fatih/vim-go
