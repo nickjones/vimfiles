@@ -5,7 +5,7 @@ runtime bundle/vim-snipmate/after/plugin/snipMate.vim " Fix for snipMate & patho
 syntax on
 filetype plugin indent on
 
-colorscheme molokai
+" colorscheme molokai
 
 augroup myfiletypes
 	autocmd!
