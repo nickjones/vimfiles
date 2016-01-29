@@ -79,3 +79,5 @@ highlight ShowTrailingWhitespace ctermbg=red guibg=red
 
 " Prevent automatic go downloads
 let g:go_disable_autoinstall = 1
+
+call rainbow_parentheses#activate()
