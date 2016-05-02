@@ -46,9 +46,6 @@
 [submodule "bundle/textile.vim"]
 	path = bundle/textile.vim
 	url = https://github.com/timcharper/textile.vim
-[submodule "bundle/verilog_systemverilog"]
-	path = bundle/verilog_systemverilog
-	url = https://github.com/nickjones/verilog_systemverilog.vim
 [submodule "bundle/vim-multiple-cursors"]
 	path = bundle/vim-multiple-cursors
 	url = https://github.com/terryma/vim-multiple-cursors
