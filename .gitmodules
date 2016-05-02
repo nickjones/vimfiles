@@ -110,3 +110,6 @@
 	path = bundle/rainbow_parentheses.vim
 	url = https://github.com/junegunn/rainbow_parentheses.vim
 	branch = master
+[submodule "bundle/verilog_systemverilog"]
+	path = bundle/verilog_systemverilog
+	url = https://github.com/vhda/verilog_systemverilog.vim
