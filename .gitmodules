@@ -97,10 +97,6 @@
 [submodule "bundle/vimerl"]
 	path = bundle/vimerl
 	url = https://github.com/jimenezrick/vimerl.git
-[submodule "bundle/rainbow_parentheses.vim"]
-	path = bundle/rainbow_parentheses.vim
-	url = https://github.com/junegunn/rainbow_parentheses.vim
-	branch = master
 [submodule "bundle/verilog_systemverilog"]
 	path = bundle/verilog_systemverilog
 	url = https://github.com/vhda/verilog_systemverilog.vim
@@ -113,3 +109,6 @@
 [submodule "bundle/vim-jdaddy"]
 	path = bundle/vim-jdaddy
 	url = https://github.com/tpope/vim-jdaddy
+[submodule "bundle/vim-fugitive"]
+	path = bundle/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
